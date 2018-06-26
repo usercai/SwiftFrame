@@ -1,4 +1,4 @@
-framework module Pods_SwiftFrame {
+module Pods_SwiftFrame [system] {
   umbrella header "Pods-SwiftFrame-umbrella.h"
 
   export *
