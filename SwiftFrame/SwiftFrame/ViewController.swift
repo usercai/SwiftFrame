@@ -20,8 +20,8 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        TestViewModel.init().homepage()
 
+        
         self.view.addSubview(self.label)
         
         

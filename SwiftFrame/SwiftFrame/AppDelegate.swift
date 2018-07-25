@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow.init(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
         window?.backgroundColor = UIColor.white
-        let vc = RegisterViewController()
+        let vc = LoginViewController()
         window?.rootViewController = vc
         return true
     }

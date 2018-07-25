@@ -12,8 +12,14 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegisterViewController" customModule="SwiftFrame" customModuleProvider="target">
             <connections>
-                <outlet property="infoTextField" destination="8T6-Zc-YJa" id="FAu-9q-ch0"/>
-                <outlet property="nameTextField" destination="qE5-gp-Hjd" id="JxE-ZG-fCn"/>
+                <outlet property="LoginLoding" destination="yW7-8q-4Bb" id="VRo-uH-3ox"/>
+                <outlet property="passwordOutlet" destination="djg-oj-1Cn" id="e7y-h6-2yG"/>
+                <outlet property="passwordTextField" destination="8T6-Zc-YJa" id="HSO-3K-b8e"/>
+                <outlet property="registerBtn" destination="0w1-3D-dPd" id="wyJ-rH-Ync"/>
+                <outlet property="repeatedPasswordOutlet" destination="BSC-lO-L2p" id="GFn-Tm-W5C"/>
+                <outlet property="repeatedPasswordTextField" destination="VeC-3J-PwY" id="yfk-hk-xUQ"/>
+                <outlet property="usernameOutlet" destination="pZ3-n6-9cQ" id="216-ml-WfW"/>
+                <outlet property="usernameTextFeild" destination="qE5-gp-Hjd" id="CxR-9j-nOF"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -22,29 +28,76 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="姓名" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qE5-gp-Hjd">
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="用户名" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qE5-gp-Hjd">
                     <rect key="frame" x="20" y="84" width="335" height="30"/>
                     <nil key="textColor"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
-                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="年龄" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8T6-Zc-YJa">
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="密码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8T6-Zc-YJa">
                     <rect key="frame" x="20" y="154" width="335" height="30"/>
                     <nil key="textColor"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pZ3-n6-9cQ">
+                    <rect key="frame" x="20" y="119" width="31" height="14.333333333333343"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="djg-oj-1Cn">
+                    <rect key="frame" x="20" y="189" width="31" height="14.333333333333343"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="密码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VeC-3J-PwY">
+                    <rect key="frame" x="20" y="218" width="335" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BSC-lO-L2p">
+                    <rect key="frame" x="20" y="253.00000000000003" width="31" height="14.333333333333343"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0w1-3D-dPd">
+                    <rect key="frame" x="20" y="297" width="335" height="30"/>
+                    <color key="backgroundColor" red="0.83529411760000005" green="0.83529411760000005" blue="0.83529411760000005" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="注册"/>
+                </button>
+                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="yW7-8q-4Bb">
+                    <rect key="frame" x="40" y="302" width="20" height="20"/>
+                </activityIndicatorView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="BSC-lO-L2p" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="0WH-d2-DNU"/>
+                <constraint firstItem="0w1-3D-dPd" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="1We-Wy-9Qc"/>
+                <constraint firstItem="VeC-3J-PwY" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="2tI-RA-I8V"/>
+                <constraint firstItem="pZ3-n6-9cQ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="3IV-9k-LMO"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="qE5-gp-Hjd" secondAttribute="trailing" constant="20" id="3i1-xW-fuz"/>
                 <constraint firstItem="qE5-gp-Hjd" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="49V-xB-LM4"/>
+                <constraint firstItem="pZ3-n6-9cQ" firstAttribute="top" secondItem="qE5-gp-Hjd" secondAttribute="bottom" constant="5" id="63Q-VB-xPW"/>
                 <constraint firstItem="8T6-Zc-YJa" firstAttribute="top" secondItem="qE5-gp-Hjd" secondAttribute="bottom" constant="40" id="9n0-qj-z5L"/>
+                <constraint firstItem="BSC-lO-L2p" firstAttribute="top" secondItem="VeC-3J-PwY" secondAttribute="bottom" constant="5" id="IHN-H3-Hg8"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="8T6-Zc-YJa" secondAttribute="trailing" constant="20" id="LaD-a7-DG8"/>
+                <constraint firstItem="djg-oj-1Cn" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="Nk0-nD-vP3"/>
+                <constraint firstItem="yW7-8q-4Bb" firstAttribute="centerY" secondItem="0w1-3D-dPd" secondAttribute="centerY" id="UWV-Ds-GmO"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="0w1-3D-dPd" secondAttribute="trailing" constant="20" id="XLp-8U-RId"/>
                 <constraint firstItem="qE5-gp-Hjd" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="40" id="c0t-2k-Qi1"/>
                 <constraint firstItem="8T6-Zc-YJa" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="fpq-37-wUL"/>
+                <constraint firstItem="djg-oj-1Cn" firstAttribute="top" secondItem="8T6-Zc-YJa" secondAttribute="bottom" constant="5" id="g4p-WT-wol"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="VeC-3J-PwY" secondAttribute="trailing" constant="20" id="gr8-3O-kXi"/>
+                <constraint firstItem="0w1-3D-dPd" firstAttribute="top" secondItem="VeC-3J-PwY" secondAttribute="bottom" constant="49" id="jYn-ji-V6m"/>
+                <constraint firstItem="yW7-8q-4Bb" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="jkN-43-Vx7"/>
+                <constraint firstItem="VeC-3J-PwY" firstAttribute="top" secondItem="8T6-Zc-YJa" secondAttribute="bottom" constant="34" id="qiN-es-5Tg"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="24.5" y="52"/>
         </view>
     </objects>
 </document>

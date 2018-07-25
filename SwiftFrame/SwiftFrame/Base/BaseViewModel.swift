@@ -18,11 +18,14 @@ enum RefreshStatus {
     case beingFooterRefresh
     case endFooterRefresh
     case noMoreData
+    case Loading
+    case Success
 }
 
 class BaseViewModel: NSObject {
 
+
     let dis = DisposeBag()
-    
-    
+    var pageIndex:Int = 1
+
 }

@@ -9,6 +9,11 @@
 
 import UIKit
 
+
+let kUserInfo = UserModel.shareInstance
+
+public let TINTCOLOR = UIColor(red: 30/255.0, green: 96/255.0, blue: 161/255.0, alpha: 1.0)
+
 /// 当前系统版本
 let kVersion = (UIDevice.current.systemVersion as NSString).floatValue
 

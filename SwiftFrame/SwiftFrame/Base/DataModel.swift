@@ -10,5 +10,8 @@ import UIKit
 
 class DataModel: BaseModel {
 
+    var msgCode:String = ""
+    var msg:String = ""
+
     
 }

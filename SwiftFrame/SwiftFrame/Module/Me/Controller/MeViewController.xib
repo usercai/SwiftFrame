@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MeViewController" customModule="SwiftFrame" customModuleProvider="target">
+            <connections>
+                <outlet property="headerImage" destination="1eI-du-5jU" id="Rk3-WF-pwE"/>
+                <outlet property="name" destination="hMu-wa-Ofu" id="Nse-2N-7ko"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1eI-du-5jU">
+                    <rect key="frame" x="147" y="70" width="80" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="MdQ-dv-qir"/>
+                        <constraint firstAttribute="width" constant="80" id="TU2-sp-trw"/>
+                    </constraints>
+                </imageView>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hMu-wa-Ofu">
+                    <rect key="frame" x="20" y="180" width="335" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="hMu-wa-Ofu" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="9Y1-m2-kUk"/>
+                <constraint firstItem="1eI-du-5jU" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="50" id="P9h-fc-H2y"/>
+                <constraint firstItem="hMu-wa-Ofu" firstAttribute="top" secondItem="1eI-du-5jU" secondAttribute="bottom" constant="30" id="V6u-MS-lm1"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="hMu-wa-Ofu" secondAttribute="trailing" constant="20" id="k1v-qe-2pa"/>
+                <constraint firstItem="1eI-du-5jU" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="yuF-bi-Iag"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+</document>

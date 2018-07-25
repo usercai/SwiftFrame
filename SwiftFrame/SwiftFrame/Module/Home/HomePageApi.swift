@@ -9,12 +9,15 @@
 import UIKit
 import Moya
 
-var BaseURL = "http://60.205.178.193:8090/"
-//var BaseURL = "http://47.94.254.180:8008/api/"
+var BaseURL = "http://47.94.254.180:8003/"
+
 
 enum HomePageApi{
-    case Homepage(type:Int,platid:Int)
-//    case login(username:String,password:String)
+    ///登陆 username password type
+    case UserLogin(String,String,String)
+    // MARK: - 获取通知列表
+    case QueryInfoList(isCarousel:Int,pageIndex:Int,pageSize:Int)
+    
 }
 
 extension HomePageApi: TargetType {
@@ -26,10 +29,12 @@ extension HomePageApi: TargetType {
     
     var path: String {
         switch self {
-        case .Homepage(type: _, platid: _):
-            return "sv_competition/competitionList/getcompetitionListByPlatId.do"
-//        case .login(username: _, password: _):
-//            return "login/mobileUserLogin"
+        case .UserLogin(_, _, _):
+            
+            return "api/Login/UserLogin"
+        case .QueryInfoList(_, _, _):
+            return "api/Notice/QueryInfoList"
+            
         default:
             return ""
         }
@@ -45,20 +50,19 @@ extension HomePageApi: TargetType {
     }
     
     var task: Task {
-        
+        var DataArray:[String:String] = ["Key":kUserInfo.Key]
+
         switch self {
-        case .Homepage(type: let type, platid: let platid):
-            
-            return .requestParameters(parameters: ["type" : type,"platid":platid], encoding: URLEncoding.default)
-//        case .login(username: let username, password: let password):
-//
-//            let identifierNumber = UIDevice.current.identifierForVendor?.uuidString
-//            let timestr = Date().c_string()
-//            let token = (identifierNumber! + timestr).md5
-//            let sig = (token + timestr + "SLAMBALL20180000001").md5
-//
-//
-//            return .requestParameters(parameters: ["userAccount" : username,"userPassword":password,"token":token,"timeStamp":timestr,"lastLoginPhone":"1"], encoding: URLEncoding.default)
+        case .UserLogin(let username, let password, let type):
+            DataArray["username"] = username
+            DataArray["password"] = password.md5()
+            DataArray["type"] = type
+            return .requestParameters(parameters: DataArray, encoding: URLEncoding.default)
+        case .QueryInfoList(let isCarousel, let pageIndex, let pageSize):
+            DataArray["isCarousel"] = isCarousel.string()
+            DataArray["pageIndex"] = pageIndex.string()
+            DataArray["pageSize"] = pageSize.string()
+            return .requestParameters(parameters: DataArray, encoding: URLEncoding.default)
         default: break
             
         }

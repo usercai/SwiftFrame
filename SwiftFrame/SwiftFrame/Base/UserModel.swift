@@ -9,14 +9,37 @@
 import UIKit
 import RxSwift
 import RxCocoa
+
+
 class UserModel: NSObject {
-
-    var name:BehaviorRelay<String> = BehaviorRelay(value: "")
-    var token:BehaviorRelay<String> = BehaviorRelay(value: "")
-
     
+    static let shareInstance = UserModel()
+    
+    var name:BehaviorRelay<String> = BehaviorRelay(value: "")
+    var pic:BehaviorRelay<String> = BehaviorRelay(value: "")
+    
+    
+    
+    var token:String = ""
 
-    class func isLogin() {
+    var GradeID:String = ""
+    var GradeName:String = ""
+    var Year:String = ""
+
+    var StudentID:String = ""
+    var Key:String = ""
+    
+    
+    var Role:UserRole = .Student
+    
+    func saveUserInfo(dic:[String:Any]) {
+
+        self.pic.accept(dic["Picture"] as! String)
+        
+        self.GradeID = "\(dic["GradeID"] ?? "")"
+        self.name.accept(dic["StuName"] as! String)
         
     }
+
+    
 }
