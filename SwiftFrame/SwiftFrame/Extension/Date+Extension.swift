@@ -139,5 +139,53 @@ extension Date{
         let comNow = calendar.dateComponents([.year,.month,.day], from: Date())
         return com.year == comNow.year && com.month == comNow.month && com.day == comNow.day
     }
+    
+    /**
+     
+     获取指定时间下一个月的时间
+     
+     */
+    
+    func getNextDate() ->Date {
+        let calendar = Calendar.current
+        var com = calendar.dateComponents([.year,.month,.day], from: self)
+        com.month! += 1
+        com.day = 1
+        if com.month == Date().month() {
+            com.day = Date().day()
+        }
+        return calendar.date(from: com)!
+    }
 
+    /**
+     
+     获取指定时间上一个月的时间
+     
+     */
+    
+    func getLastDate() -> Date {
+        
+        let calendar = Calendar.current
+        var com = calendar.dateComponents([.year,.month,.day], from: self)
+        com.month! -= 1
+        com.day = 1
+        if com.month == Date().month() {
+            com.day = Date().day()
+        }
+        return calendar.date(from: com)!
+        
+    }
+    
+    /// 生成一个时间
+    ///
+    /// - Parameters:
+    ///   - year: 年
+    ///   - Month: 月
+    ///   - Day: 日
+    static func initDate(year:Int,Month:Int,Day:Int) -> Date {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy-MM-dd"
+        let dateStr = String.init(format: "%d-%d-%d", year,Month,Day)
+        return formatter.date(from: dateStr) ?? Date()
+    }
 }

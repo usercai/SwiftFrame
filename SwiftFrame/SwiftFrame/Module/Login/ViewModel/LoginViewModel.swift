@@ -12,6 +12,10 @@ import RxSwift
 
 class LoginViewModel: NSObject {
 
+    /*
+     用户名20150101
+     密码123456
+     */
     //用户名验证结果
     let validatedUsername: Driver<ValidationResult>
     

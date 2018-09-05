@@ -10,6 +10,7 @@ import UIKit
 
 class MeViewController: BaseViewController {
 
+    @IBOutlet weak var btn: UIButton!
     @IBOutlet weak var name: UITextField!
     @IBOutlet weak var headerImage: UIImageView!
     override func viewDidLoad() {
@@ -22,7 +23,14 @@ class MeViewController: BaseViewController {
             print(name)
         }, onError: nil, onCompleted: nil, onDisposed: nil).disposed(by: dis)
         
-        
+        btn.addClick { [unowned self](btn) in
+            let view = DropDownView(frame: CGRect(x: 0, y: self.btn.c_maxY() + 5, width: kWidth, height: kHeight - self.btn.c_maxY() - 5))
+            self.view.addSubview(view)
+            view.show(dataSource: ["1","2","3"], didSelect: { (row, text) in
+                
+            })
+            
+        }
         
         // Do any additional setup after loading the view.
     }

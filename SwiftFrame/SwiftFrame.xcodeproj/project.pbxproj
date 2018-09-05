@@ -16,6 +16,10 @@
 		041B2FAF20C680B300B33949 /* SwiftFrameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041B2FAE20C680B300B33949 /* SwiftFrameUITests.swift */; };
 		041B2FBF20C68BB700B33949 /* UIImageView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041B2FBE20C68BB700B33949 /* UIImageView+Ext.swift */; };
 		041B2FC220C68EC700B33949 /* SwiftTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041B2FC120C68EC700B33949 /* SwiftTool.swift */; };
+		0424D5EA211996A600536A8D /* ColorDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0424D5E9211996A600536A8D /* ColorDefine.swift */; };
+		0424D5EC211997E100536A8D /* UIColor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0424D5EB211997E100536A8D /* UIColor+Ext.swift */; };
+		0424D5EE21199F9800536A8D /* SizeDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0424D5ED21199F9800536A8D /* SizeDefine.swift */; };
+		0424D5F02119A1B800536A8D /* GlobalFnction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0424D5EF2119A1B800536A8D /* GlobalFnction.swift */; };
 		044FAF3220CF71DD0029A0D1 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044FAF3120CF71DD0029A0D1 /* DataModel.swift */; };
 		047925EC20F74B8C00CE8F7D /* MeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047925EA20F74B8C00CE8F7D /* MeViewController.swift */; };
 		047925ED20F74B8C00CE8F7D /* MeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 047925EB20F74B8C00CE8F7D /* MeViewController.xib */; };
@@ -47,6 +51,8 @@
 		04BEF96620CA4DBC0075A203 /* PixHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BEF96520CA4DBC0075A203 /* PixHeader.swift */; };
 		04BEF96820CA5B790075A203 /* CacheTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BEF96720CA5B790075A203 /* CacheTool.swift */; };
 		04BEF97520CA72CE0075A203 /* SqlitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BEF97420CA72CE0075A203 /* SqlitManager.swift */; };
+		04C16EBD211AC16E00F58BB0 /* IB+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C16EBC211AC16E00F58BB0 /* IB+Ext.swift */; };
+		04C16EBF211AC8D500F58BB0 /* UITextField+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C16EBE211AC8D500F58BB0 /* UITextField+Ext.swift */; };
 		04C50E3320C90DBB000F2DA4 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C50E3220C90DBB000F2DA4 /* BaseModel.swift */; };
 		04C773BB20DB942100A1CA6F /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C773BA20DB942100A1CA6F /* RegisterViewModel.swift */; };
 		04C7EF5820F4B1F7006BCC9F /* UITableView+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C7EF5720F4B1F7006BCC9F /* UITableView+Rx.swift */; };
@@ -63,6 +69,8 @@
 		04F77F5020E384540065609A /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04F77F4E20E384540065609A /* LoginViewController.xib */; };
 		04F77F5220E38B230065609A /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F77F5120E38B230065609A /* LoginService.swift */; };
 		04F77F5520E398040065609A /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F77F5420E398040065609A /* LoginViewModel.swift */; };
+		04FD959421364C4600D7A409 /* DropDownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FD959321364C4600D7A409 /* DropDownView.swift */; };
+		04FD959621365FA900D7A409 /* UIButton+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FD959521365FA900D7A409 /* UIButton+Ext.swift */; };
 		0FF419A7177C33378A9D1153 /* libPods-SwiftFrame.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D809A25C9CE3EB0E93A6C0B2 /* libPods-SwiftFrame.a */; };
 /* End PBXBuildFile section */
 
@@ -99,6 +107,10 @@
 		041B2FB020C680B300B33949 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		041B2FBE20C68BB700B33949 /* UIImageView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Ext.swift"; sourceTree = "<group>"; };
 		041B2FC120C68EC700B33949 /* SwiftTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftTool.swift; sourceTree = "<group>"; };
+		0424D5E9211996A600536A8D /* ColorDefine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorDefine.swift; sourceTree = "<group>"; };
+		0424D5EB211997E100536A8D /* UIColor+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Ext.swift"; sourceTree = "<group>"; };
+		0424D5ED21199F9800536A8D /* SizeDefine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizeDefine.swift; sourceTree = "<group>"; };
+		0424D5EF2119A1B800536A8D /* GlobalFnction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalFnction.swift; sourceTree = "<group>"; };
 		044FAF3120CF71DD0029A0D1 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		047925EA20F74B8C00CE8F7D /* MeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeViewController.swift; sourceTree = "<group>"; };
 		047925EB20F74B8C00CE8F7D /* MeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MeViewController.xib; sourceTree = "<group>"; };
@@ -131,6 +143,8 @@
 		04BEF96520CA4DBC0075A203 /* PixHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixHeader.swift; sourceTree = "<group>"; };
 		04BEF96720CA5B790075A203 /* CacheTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheTool.swift; sourceTree = "<group>"; };
 		04BEF97420CA72CE0075A203 /* SqlitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SqlitManager.swift; sourceTree = "<group>"; };
+		04C16EBC211AC16E00F58BB0 /* IB+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IB+Ext.swift"; sourceTree = "<group>"; };
+		04C16EBE211AC8D500F58BB0 /* UITextField+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Ext.swift"; sourceTree = "<group>"; };
 		04C50E2620C8BF58000F2DA4 /* SwiftFrame-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftFrame-Bridging-Header.h"; sourceTree = "<group>"; };
 		04C50E3220C90DBB000F2DA4 /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
 		04C773BA20DB942100A1CA6F /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
@@ -148,6 +162,8 @@
 		04F77F4E20E384540065609A /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		04F77F5120E38B230065609A /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
 		04F77F5420E398040065609A /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		04FD959321364C4600D7A409 /* DropDownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownView.swift; sourceTree = "<group>"; };
+		04FD959521365FA900D7A409 /* UIButton+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Ext.swift"; sourceTree = "<group>"; };
 		905CF1253B2E3C0826F88EE1 /* Pods-SwiftFrame.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftFrame.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftFrame/Pods-SwiftFrame.debug.xcconfig"; sourceTree = "<group>"; };
 		A1AE2C394C9F1434F5387458 /* Pods-SwiftFrame.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftFrame.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftFrame/Pods-SwiftFrame.release.xcconfig"; sourceTree = "<group>"; };
 		D809A25C9CE3EB0E93A6C0B2 /* libPods-SwiftFrame.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SwiftFrame.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -208,8 +224,10 @@
 			children = (
 				041B2F8E20C680B100B33949 /* AppDelegate.swift */,
 				041B2F9020C680B100B33949 /* ViewController.swift */,
+				0424D5E72119959600536A8D /* AppDelegate */,
 				04BEF96220CA2E7F0075A203 /* Base */,
 				041B2FBC20C68B8E00B33949 /* Module */,
+				0424D5E8211995C100536A8D /* Define */,
 				041B2FBD20C68B9700B33949 /* Extension */,
 				041B2FC020C68E7E00B33949 /* Tool */,
 				041B2F9220C680B100B33949 /* Main.storyboard */,
@@ -252,6 +270,7 @@
 		041B2FBD20C68B9700B33949 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				04C16EBC211AC16E00F58BB0 /* IB+Ext.swift */,
 				04A9572020C78C32008E5380 /* UITextView+Extension.swift */,
 				04A9571E20C78931008E5380 /* UIImage+Extension.swift */,
 				041B2FBE20C68BB700B33949 /* UIImageView+Ext.swift */,
@@ -262,6 +281,9 @@
 				04ABD00D20E60BBA00069D1C /* Int+Ext.swift */,
 				04C7EF5720F4B1F7006BCC9F /* UITableView+Rx.swift */,
 				04D1146520F706AB00D17B0B /* HUDProgress+Rx.swift */,
+				0424D5EB211997E100536A8D /* UIColor+Ext.swift */,
+				04C16EBE211AC8D500F58BB0 /* UITextField+Ext.swift */,
+				04FD959521365FA900D7A409 /* UIButton+Ext.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -281,8 +303,26 @@
 				04F77F4920E354950065609A /* HUDTool.swift */,
 				049FF00020E4A5AD00A8FFD3 /* EnumManager.swift */,
 				04D1146320F6F2E900D17B0B /* HCRefresh.swift */,
+				04FD959321364C4600D7A409 /* DropDownView.swift */,
 			);
 			path = Tool;
+			sourceTree = "<group>";
+		};
+		0424D5E72119959600536A8D /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		0424D5E8211995C100536A8D /* Define */ = {
+			isa = PBXGroup;
+			children = (
+				0424D5E9211996A600536A8D /* ColorDefine.swift */,
+				0424D5ED21199F9800536A8D /* SizeDefine.swift */,
+				0424D5EF2119A1B800536A8D /* GlobalFnction.swift */,
+			);
+			path = Define;
 			sourceTree = "<group>";
 		};
 		047925E520F74A7700CE8F7D /* Me */ = {
@@ -668,7 +708,9 @@
 				049FEFFC20E4938100A8FFD3 /* KeyChainTool.swift in Sources */,
 				04A9572E20C7D800008E5380 /* HomePageApi.swift in Sources */,
 				04C773BB20DB942100A1CA6F /* RegisterViewModel.swift in Sources */,
+				04C16EBF211AC8D500F58BB0 /* UITextField+Ext.swift in Sources */,
 				049FEFF320E48D1F00A8FFD3 /* BaseViewController.swift in Sources */,
+				04FD959421364C4600D7A409 /* DropDownView.swift in Sources */,
 				048EDD1E20F5F6E00050D8D4 /* HomeViewModel2.swift in Sources */,
 				04BEF96820CA5B790075A203 /* CacheTool.swift in Sources */,
 				048EDD2420F605170050D8D4 /* HomeViewViewController2.swift in Sources */,
@@ -677,13 +719,16 @@
 				041B2FBF20C68BB700B33949 /* UIImageView+Ext.swift in Sources */,
 				047925EC20F74B8C00CE8F7D /* MeViewController.swift in Sources */,
 				049FEFF520E48EA800A8FFD3 /* MainViewController.swift in Sources */,
+				0424D5F02119A1B800536A8D /* GlobalFnction.swift in Sources */,
 				041B2FC220C68EC700B33949 /* SwiftTool.swift in Sources */,
 				04D1146420F6F2E900D17B0B /* HCRefresh.swift in Sources */,
 				041B2F9120C680B100B33949 /* ViewController.swift in Sources */,
 				04F77F5220E38B230065609A /* LoginService.swift in Sources */,
 				04A9572120C78C32008E5380 /* UITextView+Extension.swift in Sources */,
+				04FD959621365FA900D7A409 /* UIButton+Ext.swift in Sources */,
 				04A9571F20C78931008E5380 /* UIImage+Extension.swift in Sources */,
 				04D1146620F706AB00D17B0B /* HUDProgress+Rx.swift in Sources */,
+				0424D5EA211996A600536A8D /* ColorDefine.swift in Sources */,
 				04C50E3320C90DBB000F2DA4 /* BaseModel.swift in Sources */,
 				04A9571720C7734D008E5380 /* SwiftTool+AlertView.swift in Sources */,
 				04A9572C20C7D702008E5380 /* BaseViewModel.swift in Sources */,
@@ -702,10 +747,13 @@
 				049FEFFD20E4938100A8FFD3 /* KeychainWrapper.swift in Sources */,
 				041B2F8F20C680B100B33949 /* AppDelegate.swift in Sources */,
 				04A9572320C7CEC5008E5380 /* Observable+HandyJSON.swift in Sources */,
+				0424D5EE21199F9800536A8D /* SizeDefine.swift in Sources */,
 				04ABD00C20E5FF9200069D1C /* BaseNaviViewController.swift in Sources */,
 				04BEF96420CA2E880075A203 /* UserModel.swift in Sources */,
 				04F77F4A20E354950065609A /* HUDTool.swift in Sources */,
 				04BEF96620CA4DBC0075A203 /* PixHeader.swift in Sources */,
+				04C16EBD211AC16E00F58BB0 /* IB+Ext.swift in Sources */,
+				0424D5EC211997E100536A8D /* UIColor+Ext.swift in Sources */,
 				04C7EF5820F4B1F7006BCC9F /* UITableView+Rx.swift in Sources */,
 				04ABD01020E60C3500069D1C /* HomeViewModel.swift in Sources */,
 				04A9571D20C78015008E5380 /* String+Ext.swift in Sources */,
