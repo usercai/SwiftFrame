@@ -29,3 +29,5 @@ class BaseViewModel: NSObject {
     var pageIndex:Int = 1
 
 }
+
+

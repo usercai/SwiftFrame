@@ -1,4 +1,4 @@
-module Differentiator [system] {
+module Differentiator {
   umbrella header "Differentiator-umbrella.h"
 
   export *

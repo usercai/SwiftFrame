@@ -21,18 +21,26 @@ extension UIView {
         }
     }
     
-    @IBInspectable var borderColor: UIColor {
-        
+
+    /// SwifterSwift: Border color of view; also inspectable from Storyboard.
+    @IBInspectable public var borderColor: UIColor? {
         get {
-            return UIColor(cgColor: layer.borderColor!)
+            guard let color = layer.borderColor else { return nil }
+            return UIColor(cgColor: color)
         }
         set {
-            layer.borderColor = newValue.cgColor
+            guard let color = newValue else {
+                layer.borderColor = nil
+                return
+            }
+            // Fix React-Native conflict issue
+            guard String(describing: type(of: color)) != "__NSCFType" else { return }
+            layer.borderColor = color.cgColor
         }
     }
     
-    @IBInspectable var borderWidth: CGFloat {
-        
+    /// SwifterSwift: Border width of view; also inspectable from Storyboard.
+    @IBInspectable public var borderWidth: CGFloat {
         get {
             return layer.borderWidth
         }
@@ -42,62 +50,73 @@ extension UIView {
     }
 }
 
-extension UILabel {
-    
-    /// 国际化
-    @IBInspectable var localized: String? {
-        
-        get {
-            return text
-        }
-        set {
-            guard let newValue = newValue else { return }
-            text = newValue.localized()
-        }
-    }
-    
-
-}
-
 extension UIButton {
     
-    /// 国际化
-    @IBInspectable var localized: String? {
-        
+    /// SwifterSwift: Image of normal state for button; also inspectable from Storyboard.
+    @IBInspectable public var imageForNormal: UIImage? {
         get {
-            return titleLabel?.text
+            return image(for: .normal)
         }
         set {
-            guard let newValue = newValue else { return }
-            setTitle(newValue.localized(), for: UIControlState.normal)
+            setImage(newValue, for: .normal)
         }
     }
     
-    @IBInspectable var localizedSelected: String? {
-        
+    /// SwifterSwift: Image of selected state for button; also inspectable from Storyboard.
+    @IBInspectable public var imageForSelected: UIImage? {
         get {
-            return titleLabel?.text
+            return image(for: .selected)
         }
         set {
-            guard let newValue = newValue else { return }
-            setTitle(newValue.localized(), for: UIControlState.selected)
+            setImage(newValue, for: .selected)
         }
     }
+    
+    /// SwifterSwift: Title color of normal state for button; also inspectable from Storyboard.
+    @IBInspectable public var titleColorForNormal: UIColor? {
+        get {
+            return titleColor(for: .normal)
+        }
+        set {
+            setTitleColor(newValue, for: .normal)
+        }
+    }
+    
+    /// SwifterSwift: Title color of selected state for button; also inspectable from Storyboard.
+    @IBInspectable public var titleColorForSelected: UIColor? {
+        get {
+            return titleColor(for: .selected)
+        }
+        set {
+            setTitleColor(newValue, for: .selected)
+        }
+    }
+    
+    /// SwifterSwift: Title of normal state for button; also inspectable from Storyboard.
+    @IBInspectable public var titleForNormal: String? {
+        get {
+            return title(for: .normal)
+        }
+        set {
+            setTitle(newValue, for: .normal)
+        }
+    }
+    
+    /// SwifterSwift: Title of selected state for button; also inspectable from Storyboard.
+    @IBInspectable public var titleForSelected: String? {
+        get {
+            return title(for: .selected)
+        }
+        set {
+            setTitle(newValue, for: .selected)
+        }
+    }
+    
 }
 
 var TextFieldLimitLength: UInt8 = 0
 extension UITextField {
     
-    @IBInspectable var localized: String? {
-        
-        get {
-            return text
-        }
-        set {
-            guard let newValue = newValue else { return }
-            placeholder = newValue.localized()
-        }
-    }
     
     private var getLimitLength: Int? {
         
@@ -150,16 +169,6 @@ extension UITextField {
 var TextViewLimitLength: UInt8 = 0
 extension UITextView {
     
-    @IBInspectable var localized: String? {
-        
-        get {
-            return text
-        }
-        set {
-            guard let newValue = newValue else { return }
-            self.text = newValue.localized()
-        }
-    }
     
     private var getLimitLength: Int? {
         

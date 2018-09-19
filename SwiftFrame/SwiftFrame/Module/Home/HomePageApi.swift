@@ -20,7 +20,8 @@ enum HomePageApi{
     
 }
 
-extension HomePageApi: TargetType {
+extension HomePageApi: TargetType{
+
     
     var baseURL: URL {
         
@@ -71,7 +72,6 @@ extension HomePageApi: TargetType {
     var headers: [String : String]? {
         return [:]
     }
-
 }
 
 let homePageTool = MoyaProvider<HomePageApi>()

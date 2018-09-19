@@ -8,3 +8,5 @@
 #import "MBProgressHUD.h"
 
 #import "MJRefresh.h"
+
+#import "YYCache.h"

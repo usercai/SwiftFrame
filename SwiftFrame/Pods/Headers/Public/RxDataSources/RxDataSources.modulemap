@@ -1,4 +1,4 @@
-module RxDataSources [system] {
+module RxDataSources {
   umbrella header "RxDataSources-umbrella.h"
 
   export *

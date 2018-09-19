@@ -31,7 +31,6 @@ class HomeViewModel : BaseViewModel {
         let networkService = homePageTool.rx.request(HomePageApi.QueryInfoList(isCarousel: 0, pageIndex: 1, pageSize: 10)).asObservable().mapArray(Model_HomeNews.self).asDriver(onErrorJustReturn: [])
         
         
-        
         //生成下拉结果序列
         let headerRefreshData = input.headerRefresh
             .startWith(()) //初始化完毕时会自动加载一次数据

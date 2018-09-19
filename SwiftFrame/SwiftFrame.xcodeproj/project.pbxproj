@@ -31,7 +31,6 @@
 		049FEFFC20E4938100A8FFD3 /* KeyChainTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049FEFF620E4938000A8FFD3 /* KeyChainTool.swift */; };
 		049FEFFD20E4938100A8FFD3 /* KeychainWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049FEFF820E4938100A8FFD3 /* KeychainWrapper.swift */; };
 		049FEFFE20E4938100A8FFD3 /* KeychainItemAccessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049FEFFA20E4938100A8FFD3 /* KeychainItemAccessibility.swift */; };
-		049FEFFF20E4938100A8FFD3 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 049FEFFB20E4938100A8FFD3 /* Info.plist */; };
 		049FF00120E4A5AD00A8FFD3 /* EnumManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049FF00020E4A5AD00A8FFD3 /* EnumManager.swift */; };
 		04A9571720C7734D008E5380 /* SwiftTool+AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A9571620C7734D008E5380 /* SwiftTool+AlertView.swift */; };
 		04A9571920C777F4008E5380 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A9571820C777F4008E5380 /* Date+Extension.swift */; };
@@ -72,6 +71,12 @@
 		04FD959421364C4600D7A409 /* DropDownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FD959321364C4600D7A409 /* DropDownView.swift */; };
 		04FD959621365FA900D7A409 /* UIButton+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FD959521365FA900D7A409 /* UIButton+Ext.swift */; };
 		0FF419A7177C33378A9D1153 /* libPods-SwiftFrame.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D809A25C9CE3EB0E93A6C0B2 /* libPods-SwiftFrame.a */; };
+		903CEEFF2150E5ED00E58CA1 /* RequestAlertPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903CEEFE2150E5ED00E58CA1 /* RequestAlertPlugin.swift */; };
+		903CEF022150E9D200E58CA1 /* TokenPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903CEF012150E9D200E58CA1 /* TokenPlugin.swift */; };
+		903CEF042150ECFC00E58CA1 /* NetworkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903CEF032150ECFC00E58CA1 /* NetworkTool.swift */; };
+		903CEF062150F4A500E58CA1 /* NetworkResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903CEF052150F4A500E58CA1 /* NetworkResponse.swift */; };
+		903CEF082150FD1300E58CA1 /* ObservableNetworkResponse+HandyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903CEF072150FD1300E58CA1 /* ObservableNetworkResponse+HandyJSON.swift */; };
+		903CEF0E215119F400E58CA1 /* CachePlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903CEF0D215119F400E58CA1 /* CachePlugin.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -164,6 +169,12 @@
 		04F77F5420E398040065609A /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		04FD959321364C4600D7A409 /* DropDownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownView.swift; sourceTree = "<group>"; };
 		04FD959521365FA900D7A409 /* UIButton+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Ext.swift"; sourceTree = "<group>"; };
+		903CEEFE2150E5ED00E58CA1 /* RequestAlertPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestAlertPlugin.swift; sourceTree = "<group>"; };
+		903CEF012150E9D200E58CA1 /* TokenPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenPlugin.swift; sourceTree = "<group>"; };
+		903CEF032150ECFC00E58CA1 /* NetworkTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTool.swift; sourceTree = "<group>"; };
+		903CEF052150F4A500E58CA1 /* NetworkResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResponse.swift; sourceTree = "<group>"; };
+		903CEF072150FD1300E58CA1 /* ObservableNetworkResponse+HandyJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ObservableNetworkResponse+HandyJSON.swift"; sourceTree = "<group>"; };
+		903CEF0D215119F400E58CA1 /* CachePlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CachePlugin.swift; sourceTree = "<group>"; };
 		905CF1253B2E3C0826F88EE1 /* Pods-SwiftFrame.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftFrame.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftFrame/Pods-SwiftFrame.debug.xcconfig"; sourceTree = "<group>"; };
 		A1AE2C394C9F1434F5387458 /* Pods-SwiftFrame.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftFrame.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftFrame/Pods-SwiftFrame.release.xcconfig"; sourceTree = "<group>"; };
 		D809A25C9CE3EB0E93A6C0B2 /* libPods-SwiftFrame.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SwiftFrame.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -291,15 +302,14 @@
 		041B2FC020C68E7E00B33949 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				903CEF002150E92700E58CA1 /* NetworkTool */,
 				047925EE20F7502800CE8F7D /* RxSwiftTool */,
 				049FEFF620E4938000A8FFD3 /* KeyChainTool.swift */,
 				049FEFF720E4938100A8FFD3 /* SwiftKeychainWrapper */,
 				04BEF97320CA72BB0075A203 /* Cache */,
 				041B2FC120C68EC700B33949 /* SwiftTool.swift */,
 				04A9571620C7734D008E5380 /* SwiftTool+AlertView.swift */,
-				04A9572220C7CEC5008E5380 /* Observable+HandyJSON.swift */,
 				04C50E2620C8BF58000F2DA4 /* SwiftFrame-Bridging-Header.h */,
-				04C50E3220C90DBB000F2DA4 /* BaseModel.swift */,
 				04F77F4920E354950065609A /* HUDTool.swift */,
 				049FF00020E4A5AD00A8FFD3 /* EnumManager.swift */,
 				04D1146320F6F2E900D17B0B /* HCRefresh.swift */,
@@ -434,6 +444,7 @@
 		04BEF96220CA2E7F0075A203 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				04C50E3220C90DBB000F2DA4 /* BaseModel.swift */,
 				04A9572B20C7D702008E5380 /* BaseViewModel.swift */,
 				04BEF96320CA2E880075A203 /* UserModel.swift */,
 				04BEF96520CA4DBC0075A203 /* PixHeader.swift */,
@@ -507,6 +518,20 @@
 				04F77F5120E38B230065609A /* LoginService.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		903CEF002150E92700E58CA1 /* NetworkTool */ = {
+			isa = PBXGroup;
+			children = (
+				04A9572220C7CEC5008E5380 /* Observable+HandyJSON.swift */,
+				903CEF072150FD1300E58CA1 /* ObservableNetworkResponse+HandyJSON.swift */,
+				903CEEFE2150E5ED00E58CA1 /* RequestAlertPlugin.swift */,
+				903CEF012150E9D200E58CA1 /* TokenPlugin.swift */,
+				903CEF032150ECFC00E58CA1 /* NetworkTool.swift */,
+				903CEF052150F4A500E58CA1 /* NetworkResponse.swift */,
+				903CEF0D215119F400E58CA1 /* CachePlugin.swift */,
+			);
+			path = NetworkTool;
 			sourceTree = "<group>";
 		};
 		922E45A3E57FAF1A7C599CA2 /* Frameworks */ = {
@@ -637,7 +662,6 @@
 			files = (
 				04F77F5020E384540065609A /* LoginViewController.xib in Resources */,
 				041B2F9920C680B300B33949 /* LaunchScreen.storyboard in Resources */,
-				049FEFFF20E4938100A8FFD3 /* Info.plist in Resources */,
 				041B2F9620C680B300B33949 /* Assets.xcassets in Resources */,
 				041B2F9420C680B100B33949 /* Main.storyboard in Resources */,
 				04D5847A20DA377300A0068F /* RegisterViewController.xib in Resources */,
@@ -723,6 +747,7 @@
 				041B2FC220C68EC700B33949 /* SwiftTool.swift in Sources */,
 				04D1146420F6F2E900D17B0B /* HCRefresh.swift in Sources */,
 				041B2F9120C680B100B33949 /* ViewController.swift in Sources */,
+				903CEF042150ECFC00E58CA1 /* NetworkTool.swift in Sources */,
 				04F77F5220E38B230065609A /* LoginService.swift in Sources */,
 				04A9572120C78C32008E5380 /* UITextView+Extension.swift in Sources */,
 				04FD959621365FA900D7A409 /* UIButton+Ext.swift in Sources */,
@@ -732,12 +757,16 @@
 				04C50E3320C90DBB000F2DA4 /* BaseModel.swift in Sources */,
 				04A9571720C7734D008E5380 /* SwiftTool+AlertView.swift in Sources */,
 				04A9572C20C7D702008E5380 /* BaseViewModel.swift in Sources */,
+				903CEEFF2150E5ED00E58CA1 /* RequestAlertPlugin.swift in Sources */,
 				044FAF3220CF71DD0029A0D1 /* DataModel.swift in Sources */,
+				903CEF0E215119F400E58CA1 /* CachePlugin.swift in Sources */,
+				903CEF062150F4A500E58CA1 /* NetworkResponse.swift in Sources */,
 				04F77F4C20E35E5E0065609A /* MJRefresh+Rx.swift in Sources */,
 				04DDE1A620E2484100B7A4A5 /* ActivityIndicator.swift in Sources */,
 				049FF00120E4A5AD00A8FFD3 /* EnumManager.swift in Sources */,
 				04ABD01220E60D7B00069D1C /* Model_HomeNews.swift in Sources */,
 				04F77F4F20E384540065609A /* LoginViewController.swift in Sources */,
+				903CEF022150E9D200E58CA1 /* TokenPlugin.swift in Sources */,
 				047925F020F7505400CE8F7D /* Operators.swift in Sources */,
 				04F77F5520E398040065609A /* LoginViewModel.swift in Sources */,
 				04ABD00A20E5BD8600069D1C /* HomeViewController.swift in Sources */,
@@ -752,6 +781,7 @@
 				04BEF96420CA2E880075A203 /* UserModel.swift in Sources */,
 				04F77F4A20E354950065609A /* HUDTool.swift in Sources */,
 				04BEF96620CA4DBC0075A203 /* PixHeader.swift in Sources */,
+				903CEF082150FD1300E58CA1 /* ObservableNetworkResponse+HandyJSON.swift in Sources */,
 				04C16EBD211AC16E00F58BB0 /* IB+Ext.swift in Sources */,
 				0424D5EC211997E100536A8D /* UIColor+Ext.swift in Sources */,
 				04C7EF5820F4B1F7006BCC9F /* UITableView+Rx.swift in Sources */,

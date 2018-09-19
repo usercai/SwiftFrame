@@ -75,6 +75,7 @@ extension MBProgressHUD{
         return window!
     }
 }
+
 class HUDTool: NSObject {
 
 }

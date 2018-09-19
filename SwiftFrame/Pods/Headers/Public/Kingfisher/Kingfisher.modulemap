@@ -1,4 +1,4 @@
-module Kingfisher [system] {
+module Kingfisher {
   umbrella header "Kingfisher-umbrella.h"
 
   export *
