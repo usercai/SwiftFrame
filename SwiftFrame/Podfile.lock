@@ -26,7 +26,7 @@ PODS:
 DEPENDENCIES:
   - HandyJSON (~> 4.2.0-beta1)
   - Kingfisher
-  - MBProgressHUD
+  - MBProgressHUD (~> 1.1.0)
   - MJRefresh
   - Moya
   - Moya/RxSwift
@@ -64,6 +64,6 @@ SPEC CHECKSUMS:
   RxSwift: e49536837d9901277638493ea537394d4b55f570
   YYCache: 8105b6638f5e849296c71f331ff83891a4942952
 
-PODFILE CHECKSUM: fe73ee124fe6f549b29aaf1368c17ca32c5daefa
+PODFILE CHECKSUM: ec9d50751ec4062a10c2daf37d1c8a849e7d3052
 
 COCOAPODS: 1.5.3

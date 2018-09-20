@@ -9,9 +9,9 @@
 import UIKit
 import RxCocoa
 import RxSwift
+import HandyJSON
 
 class HomeViewModel2: BaseViewModel {
-
     
     /// 存放数据
     let models = BehaviorRelay<[Model_HomeNews]>(value: [])
@@ -28,11 +28,11 @@ class HomeViewModel2: BaseViewModel {
         let requestCommond = PublishSubject<Bool>()
         let refreshStatus = BehaviorRelay<RefreshStatus>(value: .none)
         
-        
         init(sections:Driver<[Section_HomeView]>) {
             self.sections = sections
         }
     }
+
     
     func getHomeNews() -> HomeViewModel2.Out {
         let sections = models.asObservable().map { (models) -> [Section_HomeView] in

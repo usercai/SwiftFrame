@@ -11,13 +11,8 @@ import RxSwift
 import Moya
 import HandyJSON
 
-extension NetworkResponse{
-    
-}
 
 extension Response{
-    
-    
     /// 统一转成response
     ///
     /// - Returns: NetworkResponse
@@ -143,8 +138,6 @@ extension Response{
     
 }
 
-
-
 extension ObservableType where E == Response{
     /// 转Model
     ///
@@ -156,17 +149,6 @@ extension ObservableType where E == Response{
         })
     }
     
-    
-    /// 转成NetworkResponse
-    ///
-    /// - Returns:
-    public func mapObject() -> Observable<NetworkResponse>{
-        return flatMap({ (response) -> Observable<NetworkResponse> in
-            return Observable.just(try response.mapNetworkResponse())
-        })
-    }
-    
-    
     /// [Model]
     ///
     /// - Parameter type: <#type description#>
@@ -176,7 +158,6 @@ extension ObservableType where E == Response{
             return Observable.just(try response.mapArray(T.self))
         }
     }
-    
     
     /// {"data":返回内容}
     ///

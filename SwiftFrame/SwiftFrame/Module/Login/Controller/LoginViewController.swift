@@ -43,7 +43,7 @@ class LoginViewController: BaseViewController {
                     let vc = MainViewController()
                     UIApplication.shared.keyWindow?.rootViewController = vc
                 }else{
-                    MBProgressHUD.showError("用户名密码错误")
+                    HUDTool.showText("用户名密码错误")
                 }
 
             }).disposed(by: dis)

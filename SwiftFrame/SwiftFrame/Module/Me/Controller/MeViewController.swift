@@ -24,12 +24,23 @@ class MeViewController: BaseViewController {
         }, onError: nil, onCompleted: nil, onDisposed: nil).disposed(by: dis)
         
         btn.addClick { [unowned self](btn) in
-            let view = DropDownView(frame: CGRect(x: 0, y: self.btn.c_maxY() + 5, width: kWidth, height: kHeight - self.btn.c_maxY() - 5))
-            self.view.addSubview(view)
-            view.show(dataSource: ["1","2","3"], didSelect: { (row, text) in
-                
-            })
-            
+//            let view = DropDownView(frame: CGRect(x: 0, y: self.btn.c_maxY() + 5, width: kWidth, height: kHeight - self.btn.c_maxY() - 5))
+//            self.view.addSubview(view)
+//            view.show(dataSource: ["1","2","3"], didSelect: { (row, text) in
+//
+//            })
+            NetworkTool.request(HomePageApi.QueryInfoList(isCarousel: 1, pageIndex: 1, pageSize: 10)).subscribe(onNext: { (data) in
+
+            }, onError: { (error) in
+                CLog(error)
+            }, onCompleted: {
+                CLog("completed")
+            }, onDisposed: {
+                CLog("disposed")
+            }).disposed(by: self.dis)
+//
+        
+
         }
         
         // Do any additional setup after loading the view.
@@ -40,7 +51,9 @@ class MeViewController: BaseViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        HUDTool.hiddenLoading()
+    }
     /*
     // MARK: - Navigation
 

@@ -21,6 +21,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.backgroundColor = UIColor.white
         let vc = LoginViewController()
         window?.rootViewController = vc
+        //设置mbprogressHUD菊花颜色
+        UIActivityIndicatorView.appearance(whenContainedInInstancesOf:
+            [MBProgressHUD.self]).color = .white
+        
         return true
     }
 

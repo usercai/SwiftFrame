@@ -48,8 +48,6 @@
 		04ABD01220E60D7B00069D1C /* Model_HomeNews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ABD01120E60D7B00069D1C /* Model_HomeNews.swift */; };
 		04BEF96420CA2E880075A203 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BEF96320CA2E880075A203 /* UserModel.swift */; };
 		04BEF96620CA4DBC0075A203 /* PixHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BEF96520CA4DBC0075A203 /* PixHeader.swift */; };
-		04BEF96820CA5B790075A203 /* CacheTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BEF96720CA5B790075A203 /* CacheTool.swift */; };
-		04BEF97520CA72CE0075A203 /* SqlitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BEF97420CA72CE0075A203 /* SqlitManager.swift */; };
 		04C16EBD211AC16E00F58BB0 /* IB+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C16EBC211AC16E00F58BB0 /* IB+Ext.swift */; };
 		04C16EBF211AC8D500F58BB0 /* UITextField+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C16EBE211AC8D500F58BB0 /* UITextField+Ext.swift */; };
 		04C50E3320C90DBB000F2DA4 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C50E3220C90DBB000F2DA4 /* BaseModel.swift */; };
@@ -71,12 +69,15 @@
 		04FD959421364C4600D7A409 /* DropDownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FD959321364C4600D7A409 /* DropDownView.swift */; };
 		04FD959621365FA900D7A409 /* UIButton+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FD959521365FA900D7A409 /* UIButton+Ext.swift */; };
 		0FF419A7177C33378A9D1153 /* libPods-SwiftFrame.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D809A25C9CE3EB0E93A6C0B2 /* libPods-SwiftFrame.a */; };
-		903CEEFF2150E5ED00E58CA1 /* RequestAlertPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903CEEFE2150E5ED00E58CA1 /* RequestAlertPlugin.swift */; };
 		903CEF022150E9D200E58CA1 /* TokenPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903CEF012150E9D200E58CA1 /* TokenPlugin.swift */; };
 		903CEF042150ECFC00E58CA1 /* NetworkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903CEF032150ECFC00E58CA1 /* NetworkTool.swift */; };
 		903CEF062150F4A500E58CA1 /* NetworkResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903CEF052150F4A500E58CA1 /* NetworkResponse.swift */; };
 		903CEF082150FD1300E58CA1 /* ObservableNetworkResponse+HandyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903CEF072150FD1300E58CA1 /* ObservableNetworkResponse+HandyJSON.swift */; };
 		903CEF0E215119F400E58CA1 /* CachePlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903CEF0D215119F400E58CA1 /* CachePlugin.swift */; };
+		903CEF8821524EA600E58CA1 /* HUDPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903CEF8721524EA600E58CA1 /* HUDPlugin.swift */; };
+		903CEF8C2153471900E58CA1 /* HomeViewModel3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903CEF8B2153471900E58CA1 /* HomeViewModel3.swift */; };
+		903CEF8E215387C900E58CA1 /* NetworkSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903CEF8D215387C900E58CA1 /* NetworkSection.swift */; };
+		903CEF902153900C00E58CA1 /* LogPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903CEF8F2153900C00E58CA1 /* LogPlugin.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -146,8 +147,6 @@
 		04ABD01120E60D7B00069D1C /* Model_HomeNews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model_HomeNews.swift; sourceTree = "<group>"; };
 		04BEF96320CA2E880075A203 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		04BEF96520CA4DBC0075A203 /* PixHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixHeader.swift; sourceTree = "<group>"; };
-		04BEF96720CA5B790075A203 /* CacheTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheTool.swift; sourceTree = "<group>"; };
-		04BEF97420CA72CE0075A203 /* SqlitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SqlitManager.swift; sourceTree = "<group>"; };
 		04C16EBC211AC16E00F58BB0 /* IB+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IB+Ext.swift"; sourceTree = "<group>"; };
 		04C16EBE211AC8D500F58BB0 /* UITextField+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Ext.swift"; sourceTree = "<group>"; };
 		04C50E2620C8BF58000F2DA4 /* SwiftFrame-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftFrame-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -169,12 +168,15 @@
 		04F77F5420E398040065609A /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		04FD959321364C4600D7A409 /* DropDownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownView.swift; sourceTree = "<group>"; };
 		04FD959521365FA900D7A409 /* UIButton+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Ext.swift"; sourceTree = "<group>"; };
-		903CEEFE2150E5ED00E58CA1 /* RequestAlertPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestAlertPlugin.swift; sourceTree = "<group>"; };
 		903CEF012150E9D200E58CA1 /* TokenPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenPlugin.swift; sourceTree = "<group>"; };
 		903CEF032150ECFC00E58CA1 /* NetworkTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTool.swift; sourceTree = "<group>"; };
 		903CEF052150F4A500E58CA1 /* NetworkResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResponse.swift; sourceTree = "<group>"; };
 		903CEF072150FD1300E58CA1 /* ObservableNetworkResponse+HandyJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ObservableNetworkResponse+HandyJSON.swift"; sourceTree = "<group>"; };
 		903CEF0D215119F400E58CA1 /* CachePlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CachePlugin.swift; sourceTree = "<group>"; };
+		903CEF8721524EA600E58CA1 /* HUDPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HUDPlugin.swift; sourceTree = "<group>"; };
+		903CEF8B2153471900E58CA1 /* HomeViewModel3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel3.swift; sourceTree = "<group>"; };
+		903CEF8D215387C900E58CA1 /* NetworkSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkSection.swift; sourceTree = "<group>"; };
+		903CEF8F2153900C00E58CA1 /* LogPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogPlugin.swift; sourceTree = "<group>"; };
 		905CF1253B2E3C0826F88EE1 /* Pods-SwiftFrame.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftFrame.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftFrame/Pods-SwiftFrame.debug.xcconfig"; sourceTree = "<group>"; };
 		A1AE2C394C9F1434F5387458 /* Pods-SwiftFrame.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftFrame.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftFrame/Pods-SwiftFrame.release.xcconfig"; sourceTree = "<group>"; };
 		D809A25C9CE3EB0E93A6C0B2 /* libPods-SwiftFrame.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SwiftFrame.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -306,11 +308,9 @@
 				047925EE20F7502800CE8F7D /* RxSwiftTool */,
 				049FEFF620E4938000A8FFD3 /* KeyChainTool.swift */,
 				049FEFF720E4938100A8FFD3 /* SwiftKeychainWrapper */,
-				04BEF97320CA72BB0075A203 /* Cache */,
 				041B2FC120C68EC700B33949 /* SwiftTool.swift */,
 				04A9571620C7734D008E5380 /* SwiftTool+AlertView.swift */,
 				04C50E2620C8BF58000F2DA4 /* SwiftFrame-Bridging-Header.h */,
-				04F77F4920E354950065609A /* HUDTool.swift */,
 				049FF00020E4A5AD00A8FFD3 /* EnumManager.swift */,
 				04D1146320F6F2E900D17B0B /* HCRefresh.swift */,
 				04FD959321364C4600D7A409 /* DropDownView.swift */,
@@ -413,6 +413,7 @@
 			children = (
 				04ABD00F20E60C3500069D1C /* HomeViewModel.swift */,
 				048EDD1D20F5F6DF0050D8D4 /* HomeViewModel2.swift */,
+				903CEF8B2153471900E58CA1 /* HomeViewModel3.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -453,15 +454,6 @@
 				04ABD00B20E5FF9200069D1C /* BaseNaviViewController.swift */,
 			);
 			path = Base;
-			sourceTree = "<group>";
-		};
-		04BEF97320CA72BB0075A203 /* Cache */ = {
-			isa = PBXGroup;
-			children = (
-				04BEF96720CA5B790075A203 /* CacheTool.swift */,
-				04BEF97420CA72CE0075A203 /* SqlitManager.swift */,
-			);
-			path = Cache;
 			sourceTree = "<group>";
 		};
 		04D5846D20DA372800A0068F /* Login */ = {
@@ -523,13 +515,16 @@
 		903CEF002150E92700E58CA1 /* NetworkTool */ = {
 			isa = PBXGroup;
 			children = (
+				04F77F4920E354950065609A /* HUDTool.swift */,
 				04A9572220C7CEC5008E5380 /* Observable+HandyJSON.swift */,
 				903CEF072150FD1300E58CA1 /* ObservableNetworkResponse+HandyJSON.swift */,
-				903CEEFE2150E5ED00E58CA1 /* RequestAlertPlugin.swift */,
 				903CEF012150E9D200E58CA1 /* TokenPlugin.swift */,
 				903CEF032150ECFC00E58CA1 /* NetworkTool.swift */,
 				903CEF052150F4A500E58CA1 /* NetworkResponse.swift */,
 				903CEF0D215119F400E58CA1 /* CachePlugin.swift */,
+				903CEF8721524EA600E58CA1 /* HUDPlugin.swift */,
+				903CEF8D215387C900E58CA1 /* NetworkSection.swift */,
+				903CEF8F2153900C00E58CA1 /* LogPlugin.swift */,
 			);
 			path = NetworkTool;
 			sourceTree = "<group>";
@@ -736,9 +731,7 @@
 				049FEFF320E48D1F00A8FFD3 /* BaseViewController.swift in Sources */,
 				04FD959421364C4600D7A409 /* DropDownView.swift in Sources */,
 				048EDD1E20F5F6E00050D8D4 /* HomeViewModel2.swift in Sources */,
-				04BEF96820CA5B790075A203 /* CacheTool.swift in Sources */,
 				048EDD2420F605170050D8D4 /* HomeViewViewController2.swift in Sources */,
-				04BEF97520CA72CE0075A203 /* SqlitManager.swift in Sources */,
 				04DDE1A420E23B0300B7A4A5 /* RegisterService.swift in Sources */,
 				041B2FBF20C68BB700B33949 /* UIImageView+Ext.swift in Sources */,
 				047925EC20F74B8C00CE8F7D /* MeViewController.swift in Sources */,
@@ -748,6 +741,7 @@
 				04D1146420F6F2E900D17B0B /* HCRefresh.swift in Sources */,
 				041B2F9120C680B100B33949 /* ViewController.swift in Sources */,
 				903CEF042150ECFC00E58CA1 /* NetworkTool.swift in Sources */,
+				903CEF902153900C00E58CA1 /* LogPlugin.swift in Sources */,
 				04F77F5220E38B230065609A /* LoginService.swift in Sources */,
 				04A9572120C78C32008E5380 /* UITextView+Extension.swift in Sources */,
 				04FD959621365FA900D7A409 /* UIButton+Ext.swift in Sources */,
@@ -755,14 +749,15 @@
 				04D1146620F706AB00D17B0B /* HUDProgress+Rx.swift in Sources */,
 				0424D5EA211996A600536A8D /* ColorDefine.swift in Sources */,
 				04C50E3320C90DBB000F2DA4 /* BaseModel.swift in Sources */,
+				903CEF8E215387C900E58CA1 /* NetworkSection.swift in Sources */,
 				04A9571720C7734D008E5380 /* SwiftTool+AlertView.swift in Sources */,
 				04A9572C20C7D702008E5380 /* BaseViewModel.swift in Sources */,
-				903CEEFF2150E5ED00E58CA1 /* RequestAlertPlugin.swift in Sources */,
 				044FAF3220CF71DD0029A0D1 /* DataModel.swift in Sources */,
 				903CEF0E215119F400E58CA1 /* CachePlugin.swift in Sources */,
 				903CEF062150F4A500E58CA1 /* NetworkResponse.swift in Sources */,
 				04F77F4C20E35E5E0065609A /* MJRefresh+Rx.swift in Sources */,
 				04DDE1A620E2484100B7A4A5 /* ActivityIndicator.swift in Sources */,
+				903CEF8C2153471900E58CA1 /* HomeViewModel3.swift in Sources */,
 				049FF00120E4A5AD00A8FFD3 /* EnumManager.swift in Sources */,
 				04ABD01220E60D7B00069D1C /* Model_HomeNews.swift in Sources */,
 				04F77F4F20E384540065609A /* LoginViewController.swift in Sources */,
@@ -789,6 +784,7 @@
 				04A9571D20C78015008E5380 /* String+Ext.swift in Sources */,
 				04ABD00E20E60BBA00069D1C /* Int+Ext.swift in Sources */,
 				049FEFFE20E4938100A8FFD3 /* KeychainItemAccessibility.swift in Sources */,
+				903CEF8821524EA600E58CA1 /* HUDPlugin.swift in Sources */,
 				04A9571920C777F4008E5380 /* Date+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

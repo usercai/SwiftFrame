@@ -52,7 +52,6 @@ extension HomeViewViewController2{
         self.tableView.mj_footer = HCRefresh.footerRefresh(refresh: {
             out.requestCommond.onNext(false)
         })
-        
         self.tableView.mj_header.beginRefreshing()
         //显示hud
         let hud = MBProgressHUD.showAdded(to: self.view, animated: true)
