@@ -78,6 +78,7 @@
 		903CEF8C2153471900E58CA1 /* HomeViewModel3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903CEF8B2153471900E58CA1 /* HomeViewModel3.swift */; };
 		903CEF8E215387C900E58CA1 /* NetworkSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903CEF8D215387C900E58CA1 /* NetworkSection.swift */; };
 		903CEF902153900C00E58CA1 /* LogPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903CEF8F2153900C00E58CA1 /* LogPlugin.swift */; };
+		90ED72BD215B356B00E8A69B /* DateComponents+Timepiece.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90ED72BC215B356B00E8A69B /* DateComponents+Timepiece.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -178,6 +179,7 @@
 		903CEF8D215387C900E58CA1 /* NetworkSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkSection.swift; sourceTree = "<group>"; };
 		903CEF8F2153900C00E58CA1 /* LogPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogPlugin.swift; sourceTree = "<group>"; };
 		905CF1253B2E3C0826F88EE1 /* Pods-SwiftFrame.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftFrame.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftFrame/Pods-SwiftFrame.debug.xcconfig"; sourceTree = "<group>"; };
+		90ED72BC215B356B00E8A69B /* DateComponents+Timepiece.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DateComponents+Timepiece.swift"; sourceTree = "<group>"; };
 		A1AE2C394C9F1434F5387458 /* Pods-SwiftFrame.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftFrame.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftFrame/Pods-SwiftFrame.release.xcconfig"; sourceTree = "<group>"; };
 		D809A25C9CE3EB0E93A6C0B2 /* libPods-SwiftFrame.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SwiftFrame.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCADDC13C39D9F3F0338F53F /* Pods_SwiftFrameTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftFrameTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -246,6 +248,7 @@
 				041B2F9220C680B100B33949 /* Main.storyboard */,
 				041B2F9520C680B300B33949 /* Assets.xcassets */,
 				041B2F9720C680B300B33949 /* LaunchScreen.storyboard */,
+				04D1146320F6F2E900D17B0B /* HCRefresh.swift */,
 				041B2F9A20C680B300B33949 /* Info.plist */,
 			);
 			path = SwiftFrame;
@@ -283,6 +286,7 @@
 		041B2FBD20C68B9700B33949 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				90ED72BC215B356B00E8A69B /* DateComponents+Timepiece.swift */,
 				04C16EBC211AC16E00F58BB0 /* IB+Ext.swift */,
 				04A9572020C78C32008E5380 /* UITextView+Extension.swift */,
 				04A9571E20C78931008E5380 /* UIImage+Extension.swift */,
@@ -312,7 +316,6 @@
 				04A9571620C7734D008E5380 /* SwiftTool+AlertView.swift */,
 				04C50E2620C8BF58000F2DA4 /* SwiftFrame-Bridging-Header.h */,
 				049FF00020E4A5AD00A8FFD3 /* EnumManager.swift */,
-				04D1146320F6F2E900D17B0B /* HCRefresh.swift */,
 				04FD959321364C4600D7A409 /* DropDownView.swift */,
 			);
 			path = Tool;
@@ -738,6 +741,7 @@
 				049FEFF520E48EA800A8FFD3 /* MainViewController.swift in Sources */,
 				0424D5F02119A1B800536A8D /* GlobalFnction.swift in Sources */,
 				041B2FC220C68EC700B33949 /* SwiftTool.swift in Sources */,
+				90ED72BD215B356B00E8A69B /* DateComponents+Timepiece.swift in Sources */,
 				04D1146420F6F2E900D17B0B /* HCRefresh.swift in Sources */,
 				041B2F9120C680B100B33949 /* ViewController.swift in Sources */,
 				903CEF042150ECFC00E58CA1 /* NetworkTool.swift in Sources */,

@@ -127,5 +127,6 @@ extension Reactive where Base: UILabel {
             label.textColor = result.textColor
             label.text = result.description
         }
+ 
     }
 }

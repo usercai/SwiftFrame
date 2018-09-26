@@ -31,8 +31,8 @@ extension String{
         for i in 0 ..< digestLen {
             hash.appendFormat("%02x", result[i])
         }
-        result.deinitialize()
-        
+        result.deinitialize(count: digestLen)
+        free(result)
         return String(format: hash as String)
     }
     

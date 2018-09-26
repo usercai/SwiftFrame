@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.makeKeyAndVisible()
         window?.backgroundColor = UIColor.white
         let vc = LoginViewController()
-        window?.rootViewController = vc
+        window?.rootViewController = BaseNaviViewController(rootViewController:vc)
         //设置mbprogressHUD菊花颜色
         UIActivityIndicatorView.appearance(whenContainedInInstancesOf:
             [MBProgressHUD.self]).color = .white
